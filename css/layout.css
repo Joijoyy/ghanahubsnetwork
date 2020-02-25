@@ -1,0 +1,165 @@
+:root {
+  --blue: #1db3ef;
+  --gold: #f39d1a;
+  --off-white: #fcfcfc;
+  --deep-blue: #1e9dcf;
+}
+
+/* CONTACT */
+
+.section {
+  margin-top: 0;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+}
+
+.contact-container > div {
+  width: 50%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-bottom: 10em;
+}
+
+.contact-content-title {
+  display: flex;
+  align-self: start;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 1rem;
+}
+
+.contact-content-item {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.contact-content-item .icon {
+  width: 8%;
+
+  align-self: start;
+  color: var(--blue);
+  font-size: 2em;
+  margin-right: 0.6rem;
+}
+
+.contact-content-item .details {
+  width: 80%;
+  height: 100%;
+}
+
+.image-content {
+  position: relative;
+}
+
+.image-content-image {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+/* END CONTACT */
+
+
+/* MESSAGE */
+
+.message-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--blue);
+  padding-top: 4em;
+  padding-bottom: 5em;
+  position: relative;
+  height: 80vh;
+}
+
+.message {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--deep-blue);
+  color: white;
+  position: absolute;
+  bottom: 18%;
+  z-index: 3;
+}
+
+.message > div {
+  width: 80%;
+}
+
+.message-title {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.message-text {
+  display: flex;
+}
+
+.message-text form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.message-text form > div {
+  width: 100%;
+}
+
+.message-text form label {
+  display: block;
+  font-size: 0.8em;
+}
+
+.form-input-content {
+  display: flex;
+}
+
+.form-input {
+  width: 40%;
+}
+
+.message-input {
+  margin-bottom: 2rem;
+}
+
+.message-input input {
+  width: 95%;
+  height: 2.5rem;
+  border: none;
+}
+
+.form-textarea {
+  width: 60%;
+}
+
+.form-textarea textarea {
+  width: 100%;
+  border: none;
+}
+
+.submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* END MESSAGE */

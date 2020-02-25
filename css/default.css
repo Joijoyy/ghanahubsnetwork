@@ -1,0 +1,238 @@
+/* COMMON STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #1db3ef;
+  --gold: #f39d1a;
+  --off-white: #fcfcfc;
+  --deep-blue: #1e9dcf;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* GENERAL */
+
+.logo {
+  width: 5rem;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.header {
+  padding: 2em;
+  background: var(--blue);
+  border-radius: 0;
+}
+
+.jumbotron {
+  background: var(--blue);
+  padding-top: 10rem;
+  width: 50%;
+}
+
+.round-button {
+  background: var(--gold);
+  color: white;
+  border-radius: 3em;
+}
+
+/* END GENERAL */
+
+
+/* NAV */
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-left: 20px;
+}
+
+.nav-link {
+  font-size: 0.9em !important;
+  text-transform: uppercase;
+  color: var(--blue) !important;
+}
+
+.nav-item a:hover {
+  color: var(--gold) !important;
+}
+
+/* END NAV */
+
+
+/* ABOUT SECTION */
+
+.blockqoute {
+  position: relative;
+}
+
+.blockqoute img {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
+
+.top {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  width: 60%;
+  height: 20%;
+  background: var(--blue);
+  z-index: -1;
+}
+
+.qoute {
+  position: absolute;
+  left: 60%;
+  top: 0;
+  width: 40%;
+  height: 20em;
+  z-index: 1;
+  background: var(--blue);
+}
+
+.about-column {
+  overflow: hidden;
+}
+
+.about-column .btn {
+  background: var(--gold);
+  color: white;
+  border-radius: 3em;
+}
+
+.about-column hr {
+  width: 25%;
+  border-top: 3px solid var(--gold);
+}
+/* END SECTION */
+
+/* HUBS */
+
+.hubs-column {
+  background: var(--blue);
+  color: white;
+}
+
+.hubs-column-content {
+  width: 70%;
+}
+
+.map-column {
+  position: relative;
+}
+
+.map-column img {
+  position: absolute;
+  right: 20%;
+}
+
+/* END HUBS */
+
+
+/* GALLERY */
+
+.gallery-text {
+  margin-top: 7rem;
+}
+
+/* END GALLERY */
+
+
+/* FOOTER */
+
+footer {
+  background: var(--blue);
+}
+
+.footer-logo {
+  width: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+footer hr {
+  border-top: 2px solid var(--gold);
+  width: 25%;
+  margin: 0.9rem auto;
+}
+
+.footer-icon {
+  font-size: 1.5em;
+  margin: 0.5rem;
+}
+
+/* END FOOTER */
+
+
+/*---Firefox Bug Fix --*/
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url("img/mac.png");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/* END STYLING */
