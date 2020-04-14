@@ -40,42 +40,28 @@ section {
     margin-top: 3rem;
 }
 
+p {
+    line-height: 2.5rem !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding-bottom: 8%;
+}
+
 /* END COMMON STYLING */
 
 
 /* NAVBAR STYLING */
 
-.top-container {
-    padding: 25px 0 25px 0;
-}
-
-.nav {
-    padding: 10px 0 10px 0;
-}
-
-.nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.nav ul li a {
-    text-decoration: none !important;
-    color: black !important;
-    padding: 5px;
-    font-family: 'gothamLight';
-    font-weight:  lighter;
-    font-size: .9em;
-    margin-left: 20px !important;
-    transition: .3s;
-}
-
-.nav ul li a:hover {
-    color: #f39d1a !important;
-}
-
 .logo-container img {
-    width: 20%;
+    size: 5rem;
 }
 
 /* END NAVBAR STYLING */
@@ -83,9 +69,13 @@ section {
 
 /* CAUROUSEL STYLING */
 
+.myCarousel {
+    height: 100%;
+}
+
 .carousel-inner {
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,7 +84,7 @@ section {
 }
 
 .carousel-inner .carousel-caption {
-    top: 20%;
+    top: 35%;
 }
 
 .carousel-caption h5 {
@@ -118,7 +108,7 @@ section {
 }
 
 .top-container2 {
-    color: black;
+    color: black !important;
 }
 
 .navAbout ul {
@@ -132,11 +122,11 @@ section {
 }
 
 .navAbout ul li a {
-    color: #1DB3EF !important;
+    color: rgb(71, 71, 71) !important;
     padding: 5px;
     font-family: 'gothamLight';
-    font-weight:  lighter;
-    font-size: .9em;
+    font-weight: bolder;
+    font-size: 1.0em;
     margin-left: 20px !important;
     text-decoration: none;
     transition: .3s;
@@ -156,7 +146,7 @@ section {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     /* margin-top: -40px; */
 }
@@ -170,7 +160,7 @@ section {
 
 .bannerImage h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 200px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -185,13 +175,13 @@ section {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
 }
 
 .bannerImageHubs h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 225px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -202,17 +192,17 @@ section {
 }
 
 .bannerImageAbout {
-    background-image: url('../images/about/about.jpg');
+    background-image: url('../images/about/gallery5.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
 }
 
 .bannerImageAbout h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 225px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -223,17 +213,17 @@ section {
 }
 
 .bannerImageEvent {
-    background-image: url('../images/events/bann.jpg');
+    background-image: url('../images/gallery/gallery-fourteen.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
 }
 
 .bannerImageEvent h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 225px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -244,17 +234,17 @@ section {
 }
 
 .bannerImageGallery {
-    background-image: url('../images/gallery/g.jpg');
+    background-image: url('../images/gallery/gallery-banner.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
 }
 
 .bannerImageGallery h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 225px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -265,17 +255,17 @@ section {
 }
 
 .bannerImageContact {
-    background-image: url('../images/contact/contactBanner.jpg');
+    background-image: url('../images/contact/contact-banner.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
 }
 
 .bannerImageContact h1 {
     margin-left: 15% !important;
-    padding-top: 120px !important;
+    padding-top: 225px !important;
     color: #f39d1a;
     font-family: 'gothamMedium';
 }
@@ -362,9 +352,10 @@ section {
 
 .secondContent img {
     position: absolute;
-    width: 30%;
+    width: 40%;
     top: -10%;
-    left: 70%;
+    left: 60%;
+    height: 90%;
 }
 
 .secondContent {
@@ -398,6 +389,7 @@ section {
 
 .teamContent {
     background-color: #1DB3EF;
+    ;
 }
 
 .teamText {
@@ -484,7 +476,7 @@ section {
 
 .purchase #myCarousel {
     object-fit: cover;
-    height: 180px;
+    height: 60vh;
     text-align: center;
 }
 
@@ -626,7 +618,7 @@ section {
 /* On Hover, Add A Black Background Color With A Little Bit See-through */
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #f39d1a;
     color: white;
 }
   
@@ -635,12 +627,14 @@ section {
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: #1DB3EF;
+    /* background: #1DB3EF; */
+    /* background: #b6b5b5; */
+    /* opacity: 0.3; */
 }
   
 /* The Dots / Bullets / Indicators */
 
-.dot {
+/* .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -649,7 +643,7 @@ section {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-}
+} */
   
 /* Add A Background Color To The Active Dot / Circle */
 
@@ -663,7 +657,7 @@ q {font-style: italic;}
   
 /* Add A Blue Color To The Author */
 
-.author {color: cornflowerblue;}
+.author {color: #1DB3EF;}
 
 /* END HUBS STYLING */
 
@@ -765,3 +759,4 @@ input[type=submit] {
 }
 
 /* END CONTACT STYLING */
+

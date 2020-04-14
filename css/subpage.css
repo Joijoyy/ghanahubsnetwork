@@ -1,8 +1,8 @@
 /* COMMON STYLING */
 
 *{
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   box-sizing: border-box;
 }
   
@@ -19,7 +19,34 @@ body {
   width: 100%;
 }
 
-  
+h2 {
+  font-weight: bold;
+  font-size: larger;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #f39d1a;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  color: black;
+}
+ 
 /* GENERAL STYLING  */
 
 .logo {
@@ -53,29 +80,6 @@ p {
 }
   
 /* END GENERAL */
-
-  
-/* NAV */
-
-.navbar {
-  padding: 0.8rem;
-}
-  
-.navbar-nav li {
-  padding-left: 20px;
-}
-  
-.nav-link {
-  font-size: 0.9em !important;
-  text-transform: uppercase;
-  color: var(--blue) !important;
-}
-  
-.nav-item a:hover {
-  color: var(--gold) !important;
-}
-  
-/* END NAV */
 
   
 /* CAROUSEL */
@@ -143,6 +147,7 @@ p {
 .hubs-section {
   padding: 5% 0 5% 0;
   font-size: .9em;
+  margin-top: -10%;
   /* margin-left: 5%; */
 }
 
@@ -169,43 +174,27 @@ p {
   font-size: 1.2em;
   font-weight: bold;
   top: 150px !important;
-  margin-left: 5%;
 }
 
 .gallery-section p {
   color: black;
   font-size: 1.2em;
-  margin-left: 5%;
 }
-
-  
-/* .about-section {
-  height: 100vh;
-  margin-top: 8rem;
-}
-
-.about-section h3 {
-  color: #f39d1a;
-  font-size: 1.2em;
-  font-weight: bold;
-  top: 150px !important;
-  margin-left: 10%;
-  margin-top: 60px;
-  padding: 5px;
-}
-
-.about-section p {
-  color: rgb(71, 71, 71);
-  font-size: 1.2em;
-  margin-left: 10%;
-  padding: 5px;
-} */
   
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.colon {
+  font-size: 2em;
+  margin-left: 10rem;
+  padding-top: 2rem;
+  color: #f39d1a;
+  font-style: italic;
+  font-family: Noticia Text;
 }
   
 .about-content {
@@ -216,15 +205,6 @@ p {
   
 .about-content > div {
   width: 50%;
-}
-  
-.about-text h2,
-.hubs-text h2,
-.gallery-text h2,
-.events-content h2 {
-  font-size: 4em;
-  font-weight: bolder;
-  margin-bottom: 2rem;
 }
   
 /* .about-text p, */
@@ -241,8 +221,8 @@ p {
 }
   
 .round-button {
-  padding: 1rem 3rem;
-  font-size: 1.3em;
+  padding: 1rem 2rem;
+  font-size: 1.1em;
 }
   
 .about-image {
@@ -337,11 +317,12 @@ p {
 .hubs-background {
   background: var(--blue);
   width: 65%;
-  height: 100%;
+  height: 110%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  margin-top: -3%;
 }
   
 .hubs-image {
@@ -365,7 +346,7 @@ p {
 }
   
 .gallery-content {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -397,8 +378,8 @@ p {
 /* EVENTS */
 
 .events-section {
-  background-image: url('../images/events-bg.jpg');
-  height: 50vh;
+  /* background-image: url('../images/events-bg.jpg'); */
+  height: 40vh;
   background-position: center center;
 }
 
@@ -430,41 +411,15 @@ p {
   width: 60%;
   text-align: center;
 }
+
+#blog p {
+  font-size: 1.2rem;
+}
   
 /* END EVENTS */
 
 
-/* FOOTER */
 
-footer {
-  background: var(--blue);
-}
-  
-.footer-logo {
-  width: 8rem;
-  margin-bottom: 1.2rem;
-}
-  
-footer a {
-  color: white;
-}
-  
-footer a:hover {
-  color: var(--gold);
-}
-  
-footer hr {
-  border-top: 2px solid var(--gold);
-  width: 25%;
-  margin: 0.9rem auto;
-}
-  
-.footer-icon {
-  font-size: 1.5em;
-  margin: 0.5rem;
-}
-  
-/* END FOOTER */
 
 
 /*---Firefox Bug Fix --*/
@@ -517,3 +472,58 @@ figure {
 }
 
 /* END STYLING */
+
+
+/* NEW STYLING */
+
+/* abtSec */
+
+.abtSec {
+  padding: 20px;
+  background-color: #1DB3EF;
+}
+
+.abt-sec {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.abtSec p {
+  font-size: 1.2em;
+}
+
+.Hub-Sec {
+  padding: 25px;
+}
+
+.Hub-Sec .hub-sec img {
+  /* height: 100px; */
+  width: 50rem;
+  height: 50rem;
+  margin-left: 50px;
+}
+
+/* .hub-sec img {
+  height: 40;
+  width: 200;
+} */
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+  font: 90px 'Abril Fatface', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.block-1, .block-3 {
+  height: 400px;
+  padding: 70px 20px;
+  background-size: cover;
+  background-image: url('../images/home/member-banner.jpg');
+  box-sizing: border-box;
+  background-position: center;
+}
+
+

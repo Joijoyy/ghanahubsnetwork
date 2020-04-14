@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghana Hubs Network</title>
+    <title>Gallery | Ghana Hubs Network</title>
     <link rel="icon" href="images/logo.png">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css"/>
@@ -32,15 +32,26 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>    
+    <script src="js/main.js"></script>     
+
+    <!-- GALLERY STYLING -->
+    <!-- Themefisher Icon font -->
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="plugins/lightbox2/dist/css/lightbox.min.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
     <!-- Start Nav -->
-    <div class="navContainer">
+    <div class="navContainer fixed-top">
         <div class="container">
             <div class="row top-container2">
                 <div class="col-md-2 col-xs-6 logo-container">
-                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a href="index.html"><img src="images/logoOne.png" alt="Logo"></a>
                 </div>
                 
                 <div class="menu-icon hidden-md hidden-lg" id="menu-icon"  onclick="animateMenu(this)">
@@ -54,8 +65,9 @@
                         <li><a href="index.html"><b>Home</b></a></li>
                         <li><a href="about.html"><b>About Us</b></a></li>
                         <li><a href="hubs.html"><b>Hubs</b></a></li>
-                        <li><a href="gallery.html"><b>Gallery</b></a></li>
                         <li><a href="events.html"><b>Events</b></a></li>
+                        <li><a href="gallery.html"><b>Gallery</b></a></li>
+                        <li><a href="blog.html"><b>Blog</b></a></li>
                         <li><a href="contact.html"><b>Contact Us</b></a></li>
                     </ul>                        
                 </div>
@@ -67,52 +79,217 @@
     <!-- Banner Image -->
     <div class="bannerImageGallery">
         <h1><b>GALLERY</b></h1>
-        <h5><b>WE BUILD GREAT BUSINESSES</b></h5>
+        <!-- <h5><b>WE BUILD GREAT BUSINESSES</b></h5> -->
     </div>
     <!-- End Banner Image -->
 
-    <!-- Content Area -->
-    <div class="galleryContent">        
-        <div class="container-fluid imageContainer">
-            <div class="row">
-                <div class="col-md-6 one">
-                    <img src="images/gallery/gallery-one.png" alt="">
-                </div>
-                <div class="col-md-6 two">
-                    <img src="images/gallery/gallery-two.png" alt="">
+    <!-- Gallery -->
+    <section class="portfolio section" id="portfolio">
+	    <div class="container-fluid">
+		    <div class="row">
+			    <div class="col">
+				    <div class="title text-center">
+					    <h2>PHOTO GALLERY</h2>
+					    <span class="border"></span>
+				    </div>
+			    </div>
+            </div>
+		    <div class="row" >
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <button type="button" data-filter="all">All</button>
+                        <button type="button" data-filter=".photography">Events</button>
+                        <button type="button" data-filter=".ios">Meetups</button>
+                        <button type="button" data-filter=".development">Pitch</button>
+                        <button type="button" data-filter=".design">Workshops</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+		    <div class="row portfolio-items-wrapper">
+			    <div class="col-6 col-md-4 padding-0 mix design">
+				    <div class="portfolio-block">
+					    <img class="img-fluid" src="images/gallery/gallery-one.jpg" alt="">
+					    <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-one.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+						    <h4><a href="">MVP Masterclass</a></h4>
+					    </div>
+				    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 padding-0 mix design ios">
+                    <div class="portfolio-block ">
+                        <img class="img-fluid" src="images/gallery/gallery-two.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-two.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Workshops</a></h4>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="container-fluid imageContainer">
-            <div class="row">
-                <div class="col-md-12 three">
-                    <img src="images/gallery/gallery-three.png" alt="">
+                <div class="col-6 col-md-4 padding-0 mix photography development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-three.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-three.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Pitch</a></h4>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container-fluid imageContainer">
-            <div class="row">
-                <div class="col-md-6 four">
-                    <img src="images/gallery/gallery-four.png" alt="">
+			    <div class="col-6 col-md-4 padding-0 mix photography ios">
+				    <div class="portfolio-block">
+					    <img class="img-fluid" src="images/gallery/gallery-four.jpg" alt="">
+					    <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-four.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+						    <h4><a href="">Incubation</a></h4>
+					    </div>
+				    </div>
                 </div>
-                <div class="col-md-6 five">
-                    <img src="images/gallery/gallery-five.png" alt="">
+                
+                <div class="col-6 col-md-4 padding-0 mix design">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-five.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-five.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Meetups</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 development mix design">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-six.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-six.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Events</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design">
+				    <div class="portfolio-block">
+					    <img class="img-fluid" src="images/gallery/gallery-seven.jpg" alt="">
+					    <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-seven.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+						    <h4><a href="">MVP Masterclass</a></h4>
+					    </div>
+				    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design">
+				    <div class="portfolio-block">
+					    <img class="img-fluid" src="images/gallery/gallery-eight.jpg" alt="">
+					    <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-eight.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+						    <h4><a href="">Pitch</a></h4>
+					    </div>
+				    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design">
+				    <div class="portfolio-block">
+					    <img class="img-fluid" src="images/gallery/gallery-nine.jpg" alt="">
+					    <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-nine.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+						    <h4><a href="">Annual Gathering</a></h4>
+					    </div>
+				    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix photography development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-ten.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-ten.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Pitch</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix photography development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-eleven.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-eleven.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Pitch</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-twelve.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-twelve.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Meetups</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design ios">
+                    <div class="portfolio-block ">
+                        <img class="img-fluid" src="images/gallery/gallery-thirtheen.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-thirtheen.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Workshops</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix design ios">
+                    <div class="portfolio-block ">
+                        <img class="img-fluid" src="images/gallery/gallery-fourteen.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-fourteen.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Workshops</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 padding-0 mix photography development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="images/gallery/gallery-fifteen.jpg" alt="">
+                        <div class="caption">
+                            <a class="search-icon" href="images/gallery/gallery-fifteen.jpg" data-lightbox="image-1">
+                                <i class="tf-ion-ios-search-strong"></i>
+                            </a>
+                            <h4><a href="">Pitch</a></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <a href="https://www.instagram.com/ghhubsnetwork/">
-        <div class="submit-button">
-            <button class="btn round-button">
-                See More
-            </button>
-        </div>
-    </a>    
-    <br>
-    <!-- End Content Area -->
+	    </div>
+    </section>
+    <!-- End Gallery -->
 
     <!-- Footer -->
     <section id="footer">
@@ -120,7 +297,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft"  data-wow-delay="200ms">
-                        <h3>GTBHN <span>INFO</span></h3>
+                        <h3>GHN <span>INFO</span></h3>
                         <img src="images/logoOne.png" alt="Logo">
                         <div class="info">
                             <ul>
@@ -142,7 +319,7 @@
                         <div class="info">
                             <ul>
                                 <li>
-                                  <h4><i class="fa fa-phone"></i>Telefone</h4>
+                                  <h4><i class="fa fa-phone"></i>Telephone</h4>
                                   <p>(+233) 123 456 78- (000) 123 4567 89</p>     
                                 </li>
                                 <li>
@@ -150,7 +327,7 @@
                                   <p>205/6 2nd Emmause Ln, Labone, Accra</p>
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
+                                  <h4><i class="fa fa-envelope"></i>E-mail</h4>
                                   <p>info@tech-businesshubsgh.org</p>  
                                 </li>
                             </ul>
@@ -161,7 +338,7 @@
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
                         <div class="gallary">
-                            <h3>PHOTO <span>STORIES</span></h3>
+                            <h3>BLOG <span>STORIES</span></h3>
                             <ul>
                                 <li>
                                     <a href="https://twitter.com/devinvogue/status/1230452291414740992"><img src="images/about/photostory-one.png" alt=""></a>
@@ -215,7 +392,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
-                        <p>Copyright &copy; 2020 - All Rights Reserved. Design and Developed By Team Free Wi-Fi.</p>
+                        <p>Copyright &copy; 2020 - All Rights Reserved. Design and Developed By UWAT Alumni.</p>
                     </div>
                 </div>
             </div>
@@ -226,5 +403,14 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- lightbox -->
+    <script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="plugins/mixitup/dist/mixitup.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
